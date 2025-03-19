@@ -3,6 +3,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import "./style.css"
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -32,19 +34,21 @@ export default () => {
       spaceBetween={20}
       slidesPerView={1}
       navigation
+      allowTouchMove={false}
       pagination={{ clickable: true }}
-      className="h-screen "
+      className="h-screen swiper-pagination-custom"
     >
       {images.map((item, index) => {
         const [city, country] = item.place.split(", ");
 
         return (
-          <SwiperSlide key={index} className="relative cursor-grab">
+          <SwiperSlide key={index} className="relative ">
             
             <img
               src={item.img}
               className="w-full h-full object-cover"
               alt={`Slide ${index + 1}`}
+              loading="lazy"
             />
 
             <div className="absolute inset-0 bg-black opacity-50"></div>

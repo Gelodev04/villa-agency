@@ -26,14 +26,10 @@ export default function BestDeal() {
         </h2>
         <div className="text-sm space-y-7 ">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod
-            tempor pack incididunt ut labore et dolore magna aliqua quised ipsum
-            suspendisse.
+          Each villa in our collection is carefully selected to offer the perfect blend of luxury, comfort, and modern living. From stunning oceanfront retreats to private countryside estates, our properties feature high-end finishes, state-of-the-art amenities, and breathtaking views.
           </p>
           <p>
-            When you need free CSS templates, you can simply type TemplateMo in
-            any search engine website. In addition, you can type TemplateMo
-            Portfolio, TemplateMo One Page Layouts, etc.
+          Whether you're looking for a vacation home, a rental investment, or a permanent residence, our team is here to guide you through every step of the process. Contact us today to explore exclusive listings tailored to your lifestyle and preferences.
           </p>
         </div>
 

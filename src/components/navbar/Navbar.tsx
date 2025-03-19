@@ -1,6 +1,7 @@
 import { Squash as Hamburger } from 'hamburger-react'
 import { useState } from "react";
 import Dropmenu from "./Dropmenu";
+import { AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [isOpen, setOpen] = useState<boolean>(false);
@@ -15,7 +16,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-    {isOpen && (<Dropmenu/>)}
+    <AnimatePresence>{isOpen && (<Dropmenu/>)}</AnimatePresence>
       
     </>
   );

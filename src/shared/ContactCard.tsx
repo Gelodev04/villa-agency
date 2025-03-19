@@ -7,7 +7,7 @@ const ContactCard = () => {
       <div className="flex items-center gap-5 p-4 bg-white shadow-md rounded-2xl border py-7 px-7">
         <Phone className="text-main" size={45} />
         <div>
-          <p className="font-semibold text-myblack text-xl">010-020-0340</p>
+          <p className="font-semibold text-myblack text-xl">041-385-7261</p>
           <p className="text-[#AAAAAA] text-sm">Phone Number</p>
         </div>
       </div>
@@ -16,7 +16,9 @@ const ContactCard = () => {
       <div className="flex items-center gap-5 p-4 bg-white shadow-md rounded-2xl border py-7 px-7">
         <Mail className="text-main" size={45} />
         <div>
-          <p className="font-semibold text-myblack text-xl">info@villa.co</p>
+          <p className="font-semibold text-myblack text-xl">
+            villaagency@gmail.com
+          </p>
           <p className="text-[#AAAAAA] text-sm">Business Email</p>
         </div>
       </div>
