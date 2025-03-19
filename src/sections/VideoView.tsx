@@ -1,5 +1,5 @@
 import StatsSection from "../shared/StatBox";
-import VideoViewBox from "../shared/VideoViewBox";
+import VideoViewBox from "@/features/video/VideoViewBox";
 
 export default function VideoView() {
   return (

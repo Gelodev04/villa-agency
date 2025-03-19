@@ -1,5 +1,5 @@
-import SectionDivider from "../components/ui/SectionDivider";
-import VideoPlaceholder from "../features/video/Video";
+import SectionDivider from "@/components/ui/SectionDivider";
+import VideoPlaceholder from "./Video";
 
 export default function VideoViewBox() {
   return (

@@ -11,7 +11,7 @@ export default function Properties() {
         We Provide The Best Property You Like
       </h1>
 
-      <div className="mt-10">
+      <div className="mt-22">
         <PropertyList />
       </div>
     </div>

@@ -1,10 +1,12 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import BestDeal from "./sections/BestDeal";
+import ContactUs from "./sections/ContactUs";
 import Featured from "./sections/Featured";
 import Home from "./sections/Home";
 import Properties from "./sections/Properties";
 import VideoView from "./sections/VideoView";
+import Footer from "./shared/Footer";
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
       <VideoView />
       <BestDeal />
       <Properties />
-      <div className="h-screen"></div>
+<ContactUs/>
+      <Footer/>
+  
     </div>
   );
 }
