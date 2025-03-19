@@ -1,4 +1,4 @@
-import SectionDivider from "../SectionDivider";
+import SectionDivider from "../components/ui/SectionDivider";
 import FeatureCard from "../shared/FeaturedCard";
 import InfoCard from "../shared/InfoCard";
 

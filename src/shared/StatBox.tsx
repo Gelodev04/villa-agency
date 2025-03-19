@@ -1,3 +1,5 @@
+import { Counter } from "../components/ui/Counter";
+
 export default function StatsSection() {
   const stats = [
     { number: "34", label: "Buildings Finished Now" },
@@ -11,15 +13,15 @@ export default function StatsSection() {
           key={index}
           className="relative flex items-center justify-between bg-[#FFEEE9] p-5 py-6 rounded-lg shadow-md w-[17rem]"
         >
-         
           <div className="flex items-center gap-6 pl-5">
             <span className="text-4xl font-bold text-main">
-              {stat.number}
+              <Counter value={stat.number}></Counter>
             </span>
-            <span className="text-myblack font-semibold w-[110px] ">{stat.label}</span>
+            <span className="text-myblack font-semibold w-[110px] ">
+              {stat.label}
+            </span>
           </div>
 
-        
           <div className="absolute right-[-10px] top-1/9 transform -translate-y-1/2 size-12 bg-main rounded-full"></div>
         </div>
       ))}
