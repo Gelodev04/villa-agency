@@ -7,6 +7,7 @@ import "./style.css"
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
+
 // Import Swiper styles
 
 export default () => {
@@ -36,6 +37,8 @@ export default () => {
       navigation
       allowTouchMove={false}
       pagination={{ clickable: true }}
+      lazyPreloadPrevNext={1}
+     
       className="h-screen swiper-pagination-custom"
     >
       {images.map((item, index) => {
@@ -48,6 +51,8 @@ export default () => {
               src={item.img}
               className="w-full h-full object-cover"
               alt={`Slide ${index + 1}`}
+              width={100}
+              height={100}
               loading="lazy"
             />
 

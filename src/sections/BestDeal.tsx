@@ -42,6 +42,7 @@ export default function BestDeal() {
               className="w-full max-w-[600px] rounded-lg"
               src="/images/deal-01.jpg"
               alt="deal"
+              loading="lazy"
             />
           </div>
         </div>

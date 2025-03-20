@@ -14,6 +14,7 @@ export default function Featured() {
                 className="w-1/2 h-1/2 ml-2"
                 src="/images/featured-icon.png"
                 alt="icon"
+                loading="lazy"
               />
             </div>
           </div>

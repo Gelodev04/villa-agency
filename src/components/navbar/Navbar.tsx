@@ -1,8 +1,9 @@
-import { Squash as Hamburger } from 'hamburger-react'
+import { Squash as Hamburger } from "hamburger-react";
 import { useState } from "react";
-import Dropmenu from "./Dropmenu";
 import { AnimatePresence } from "framer-motion";
-import ScheduleButton from '../ui/ScheduleButton';
+import ScheduleButton from "../ui/ScheduleButton";
+import { lazy, Suspense } from "react";
+const Dropmenu = lazy(() => import("./Dropmenu"));
 
 export default function Navbar() {
   const [isOpen, setOpen] = useState<boolean>(false);
@@ -24,7 +25,7 @@ export default function Navbar() {
       label: "Contact Us",
       href: "/",
     },
-  ]
+  ];
   return (
     <>
       <nav className="p-6  bg-white lg:px-20">
@@ -32,26 +33,34 @@ export default function Navbar() {
           <a href="/">
             <h1 className="font-bold text-3xl text-myblack  ">VILLA</h1>
           </a>
-          <div className='lg:hidden'>
+
+          <div className="lg:hidden">
             <Hamburger color="#1E1E1E" toggled={isOpen} toggle={setOpen} />
           </div>
 
-          <ul className='hidden lg:flex gap-10 items-center font-medium'>
+          <ul className="hidden lg:flex gap-10 items-center font-medium">
             {navItems.map((item) => (
               <li key={item.label}>
-                <a href={item.href} className="hover:text-main duration-100 ease-out">
+                <a
+                  href={item.href}
+                  className="hover:text-main duration-100 ease-out"
+                >
                   {item.label}
                 </a>
-              
               </li>
             ))}
-            <ScheduleButton/>
+            <ScheduleButton />
           </ul>
         </div>
       </nav>
-
-    <AnimatePresence>{isOpen && (<Dropmenu/>)}</AnimatePresence>
       
+      <AnimatePresence>
+        {isOpen && (
+          <Suspense fallback={<div>Loading...</div>}>
+            <Dropmenu />
+          </Suspense>
+        )}
+      </AnimatePresence>
     </>
   );
 }

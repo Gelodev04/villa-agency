@@ -11,6 +11,7 @@ const PropertyCard = ({ property }: { property: any }) => {
         width={400}
         height={250}
         className="w-full h-52 object-cover rounded-lg"
+        loading="lazy"
       />
 
     
