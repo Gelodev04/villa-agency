@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 
-export default () => {
+const MySwiper = () => {
   const images = [
     {
       img: "/images/swiper1.jpg",
@@ -72,3 +72,5 @@ export default () => {
     </Swiper>
   );
 };
+
+export default MySwiper;
