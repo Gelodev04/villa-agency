@@ -1,6 +1,6 @@
 const ContactForm = () => {
     return (
-      <div className="max-w-md mx-auto bg-white py-9 px-8 shadow-md rounded-2xl border">
+      <div className="w-full mx-auto bg-white py-9 px-8 shadow-md rounded-2xl border">
         <form className="space-y-8">
           {/* Full Name */}
           <div>

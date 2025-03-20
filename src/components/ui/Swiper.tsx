@@ -53,7 +53,7 @@ export default () => {
 
             <div className="absolute inset-0 bg-black opacity-50"></div>
 
-            <div className="absolute inset-8 flex flex-col   justify-center text-white  px-6 font-poppins">
+            <div className="absolute inset-8 flex flex-col   justify-center text-white  px-6 font-poppins max-w-[500px] lg:ml-20 xl:ml-40">
               <p className="bg-white font-medium inline-block w-auto max-w-fit px-3 py-1">
                 <span className="text-black">{city}, </span>
                 <span className="text-[#F35525]">{country}</span>{" "}

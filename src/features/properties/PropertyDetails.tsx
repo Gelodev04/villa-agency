@@ -1,8 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 
-const PropertyDetails = () => {
-  const [selectedType, setSelectedType] = useState("Apartment");
+const PropertyDetails = ({ selectedType }: { selectedType: string }) => {
+ 
   const [counts, setCounts] = useState({
     space: 0,
     floor: 0,
@@ -40,19 +40,7 @@ const PropertyDetails = () => {
   return (
     <div className="w-full  mx-auto  bg-white rounded-lg  ">
     
-      <div className="flex space-x-2 mb-4 justify-center">
-        {Object.keys(properties).map((type) => (
-          <button
-            key={type}
-            className={`px-4 py-2 rounded-md text-white duration-100 ease-out ${
-              selectedType === type ? "bg-main" : "bg-myblack"
-            }`}
-            onClick={() => setSelectedType(type)}
-          >
-            {type}
-          </button>
-        ))}
-      </div>
+      
 
  
       <div className="max-w-[700px] mx-auto w-auto py-5 shadow-[1px_0px_23px_3px_rgba(0,_0,_0,_0.1)] px-5 mt-10">

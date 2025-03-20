@@ -7,11 +7,11 @@ export default function StatsSection() {
     { number: "24", label: "Awwards Won 2023" },
   ];
   return (
-    <div className="flex flex-col items-center gap-12 ">
+    <div className="flex flex-col  items-center gap-12 lg:flex-row justify-center ">
       {stats.map((stat, index) => (
         <div
           key={index}
-          className="relative flex items-center justify-between bg-[#FFEEE9] p-5 py-6 rounded-lg shadow-md w-[17rem]"
+          className="relative flex items-center justify-between bg-[#FFEEE9] p-5 py-6 rounded-lg shadow-md w-[17rem] "
         >
           <div className="flex items-center gap-6 pl-5">
             <span className="text-4xl font-bold text-main">

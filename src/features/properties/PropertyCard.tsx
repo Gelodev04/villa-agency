@@ -3,7 +3,7 @@
 
 const PropertyCard = ({ property }: { property: any }) => {
   return (
-    <div className="bg-white shadow-md rounded-lg overflow-hidden p-4 border max-w-[400px] w-full  mx-auto">
+    <div className="bg-white  rounded-lg overflow-hidden p-4  max-w-[400px] w-full  mx-auto">
       {/* Image */}
       <img
         src={property.image}

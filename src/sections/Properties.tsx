@@ -7,7 +7,7 @@ export default function Properties() {
       <div className="flex justify-center">
         <SectionDivider name="properties" />
       </div>
-      <h1 className="text-center text-myblack font-bold text-4xl mt-7">
+      <h1 className="text-center md:w-1/2 mx-auto text-myblack font-bold text-4xl mt-7 lg:text-5xl">
         We Provide The Best Property You Like
       </h1>
 

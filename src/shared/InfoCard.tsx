@@ -31,7 +31,7 @@ export default function InfoCard() {
     {info.map((item, index) => (
       <AccordionItem key={index} value={`item-${index + 1}`} className="px-3 ">
         <AccordionTrigger className="text-lg text-myblack">{item.title}</AccordionTrigger>
-        {item.content && <AccordionContent className="text-myblack">{item.content}</AccordionContent>}
+        {item.content && <AccordionContent className="text-myblack max-w-[600px]">{item.content}</AccordionContent>}
       </AccordionItem>
     ))}
   </Accordion>
