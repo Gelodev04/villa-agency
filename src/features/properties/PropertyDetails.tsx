@@ -25,10 +25,11 @@ const PropertyDetails = ({ selectedType }: { selectedType: string }) => {
 
     const interval = setInterval(() => {
       frame++;
+      const propertyKey = selectedType as keyof typeof properties;
       setCounts({
-        space: Math.round((frame / totalFrames) * properties[selectedType].space),
-        floor: Math.round((frame / totalFrames) * properties[selectedType].floor),
-        rooms: Math.round((frame / totalFrames) * properties[selectedType].rooms),
+        space: Math.round((frame / totalFrames) * properties[propertyKey].space),
+        floor: Math.round((frame / totalFrames) * properties[propertyKey].floor),
+        rooms: Math.round((frame / totalFrames) * properties[propertyKey].rooms),
       });
 
       if (frame >= totalFrames) clearInterval(interval);

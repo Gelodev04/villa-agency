@@ -11,7 +11,7 @@ export default function BestDeal() {
     <div className="mt-44 px-5">
       {/* Header Section */}
       <div className="flex flex-col justify-center items-center">
-        <div className="lg:flex lg:items-center lg:justify-between max-w-[65rem] w-full">
+        <div className="lg:flex lg:items-center lg:justify-between max-w-[75rem] w-full">
           {/* Left Section */}
           <div className="flex flex-col justify-center items-center lg:items-start lg:w-1/2">
             <SectionDivider name="best deal" />
@@ -30,7 +30,7 @@ export default function BestDeal() {
         </div>
 
         {/* Property Details + Image */}
-        <div className="lg:flex lg:justify-between lg:items-center max-w-[65rem] w-full mt-10 space-y-10 lg:space-y-0 lg:space-x-10">
+        <div className="lg:flex lg:justify-between lg:items-center max-w-[75rem] w-full mt-10 space-y-10 lg:space-y-0 lg:space-x-10">
           {/* Left - Property Details */}
           <div className="w-full lg:w-1/2">
             <PropertyDetails selectedType={selectedType} />
@@ -47,7 +47,7 @@ export default function BestDeal() {
         </div>
 
         {/* Extra Info Section */}
-        <div className="text-[#4A4A4A] max-w-[50rem] mx-auto mt-14">
+        <div className="text-[#4A4A4A] max-w-[60rem] mx-auto mt-14">
           <h2 className="text-myblack font-semibold my-8">
             Extra Info About Property
           </h2>

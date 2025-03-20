@@ -6,7 +6,7 @@ const PropertyTypeSelector = ({ selectedType, setSelectedType }: { selectedType:
         {propertyTypes.map((type) => (
           <button
             key={type}
-            className={`px-4 py-2 lg:py-3  rounded-md text-white duration-100 ease-out lg:min-w-[150px] ${
+            className={`px-4 py-2 lg:py-3  rounded-md text-white duration-100 ease-out lg:min-w-[150px] cursor-pointer ${
               selectedType === type ? "bg-main" : "bg-myblack"
             }`}
             onClick={() => setSelectedType(type)}

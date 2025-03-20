@@ -41,7 +41,7 @@ export default function Dropmenu() {
             className="text-center border-t py-3 bg-white"
             variants={itemVariants}
           >
-            <p>{items.item}</p>
+            <p className="cursor-pointer hover:text-main duration-100 ease-out">{items.item}</p>
           </motion.div>
         ))}
       </div>
