@@ -3,7 +3,7 @@ import SectionDivider from "../components/ui/SectionDivider";
 
 export default function Properties() {
   return (
-    <div className="mt-40 px-3">
+    <main id="property" className="mt-40 px-3">
       <div className="flex justify-center">
         <SectionDivider name="properties" />
       </div>
@@ -14,6 +14,6 @@ export default function Properties() {
       <div className="mt-22">
         <PropertyList />
       </div>
-    </div>
+    </main>
   );
 }

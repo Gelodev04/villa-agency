@@ -8,7 +8,7 @@ export default function BestDeal() {
   const [selectedType, setSelectedType] = useState("Apartment");
 
   return (
-    <div className="mt-44 px-5">
+    <main id="deal" className="mt-44 px-5">
       {/* Header Section */}
       <div className="flex flex-col justify-center items-center">
         <div className="lg:flex lg:items-center lg:justify-between max-w-[75rem] w-full">
@@ -72,6 +72,6 @@ export default function BestDeal() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

@@ -11,20 +11,24 @@ export default function Navbar() {
   const navItems = [
     {
       label: "Home",
-      href: "/",
+      href: "#home",
+    },
+    {
+      label: "Featured",
+      href: "#featured",
+    },
+    {
+      label: "Best Deal",
+      href: "#deal",
     },
     {
       label: "Properties",
-      href: "/",
-    },
-    {
-      label: "Property Details",
-      href: "/",
+      href: "#property",
     },
     {
       label: "Contact Us",
-      href: "/",
-    },
+      href: "#contact",
+    }
   ];
   return (
     <>
@@ -57,7 +61,7 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <Suspense fallback={<div>Loading...</div>}>
-            <Dropmenu />
+            <Dropmenu navItems={navItems}/>
           </Suspense>
         )}
       </AnimatePresence>

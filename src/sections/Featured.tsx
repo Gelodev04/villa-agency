@@ -4,7 +4,7 @@ import InfoCard from "../shared/InfoCard";
 
 export default function Featured() {
   return (
-    <main className="px-3 pt-20 ">
+    <main id="featured" className="px-3 pt-20 ">
       <section className="lg:flex lg:px-10 gap-5">
         <div className="ml-[5rem]">
           <div className="relative max-w-[500px] h-auto mx-auto ">

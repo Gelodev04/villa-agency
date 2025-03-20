@@ -7,10 +7,12 @@ import Home from "./sections/Home";
 import Properties from "./sections/Properties";
 import VideoView from "./sections/VideoView";
 import Footer from "./shared/Footer";
+import Header from "./shared/Header";
 
 function App() {
   return (
     <div className="font-poppins">
+      <Header/>
       <Navbar />
       <Home />
       <Featured />

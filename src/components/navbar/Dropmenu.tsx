@@ -1,12 +1,7 @@
 import { motion } from "framer-motion";
 
-export default function Dropmenu() {
-  const menuItems = [
-    { item: "Home", url: "/" },
-    { item: "Properties", url: "/" },
-    { item: "Property Details", url: "/" },
-    { item: "Contact Us", url: "/" },
-  ];
+export default function Dropmenu({navItems}: any) {
+ 
 
   // Parent container animation
   const menuVariants = {
@@ -35,13 +30,15 @@ export default function Dropmenu() {
       variants={menuVariants}
     >
       <div className="max-w-[600px] h-auto mx-auto  shadow-lg ">
-        {menuItems.map((items, index) => (
+        {navItems.map((items: any, index: number) => (
           <motion.div
             key={index}
             className="text-center border-t py-3 bg-white"
             variants={itemVariants}
           >
-            <p className="cursor-pointer hover:text-main duration-100 ease-out">{items.item}</p>
+            <a href={items.href}>
+              <p className="cursor-pointer hover:text-main duration-100 ease-out">{items.label}</p>
+            </a>
           </motion.div>
         ))}
       </div>

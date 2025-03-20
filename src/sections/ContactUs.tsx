@@ -5,7 +5,7 @@ import MapComponent from "@/shared/MapComponent";
 
 export default function ContactUs() {
   return (
-    <div className="mt-20">
+    <main id="contact"  className="mt-20">
       <div
         className="pt-20 bg-no-repeat object-cover  px-4 lg:px-16"
         style={{ backgroundImage: "url('/images/video-bg.jpg')" }}
@@ -29,6 +29,6 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
